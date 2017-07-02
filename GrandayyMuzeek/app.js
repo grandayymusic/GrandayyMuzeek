@@ -113,6 +113,8 @@ client.on('message', message => {
 
 client.on("ready", () => {
     commandchannel = client.guilds.get(Settings.guild).channels.get(Settings.commands);
+
+    client.user.setGame("JOIN THE CULT", "https://twitch.tv/discord");
 });
 
 client.login(Settings.token);
