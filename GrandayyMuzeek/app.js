@@ -57,7 +57,7 @@ client.on('message', message => {
             .setTimestamp()
             .addField(':musical_note: Credits on making is bot and the dank music!', `Special thanks to these guys!`)
             .addField(`Music provided for the bot`, `The one and only <@!215826291977486336>`)
-            .addField(`Main developers:`, `Lead - <@204483358909136896> \n Devs - <@168827261682843648> and <@265071448182358018> \n Person who makes the profile picture of the bot - <@205654142302027777> \n Helped with the bot - <@140762569056059392>`)
+            .addField(`Main developers:`, `Devs - <@204483358909136896> and <@168827261682843648>\nProfile picture - <@205654142302027777> \nAdded edge - <@140762569056059392>`)
             .setThumbnail(client.avatarURL)
             .setFooter(`Requested by ${message.author.username}`);
         message.channel.send({ embed: embed });
@@ -114,7 +114,8 @@ client.on('message', message => {
 client.on("ready", () => {
     commandchannel = client.guilds.get(Settings.guild).channels.get(Settings.commands);
 
-    client.user.setGame("JOIN THE CULT", "https://twitch.tv/discord");
+    client.user.setGame("grandayy's muzeek | Made by Duster and ItsJustNasty | ", "https://www.twitch.tv/heythatisnasty");
+    console.log(`Logged in as ${client.user.username}!`);
 });
 
 client.login(Settings.token);
