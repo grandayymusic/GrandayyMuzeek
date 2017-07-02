@@ -1,0 +1,9 @@
+{
+  "name": "grandayy-muzeek",
+  "version": "0.0.0",
+  "description": "GrandayyMuzeek",
+  "main": "app.js",
+  "author": {
+    "name": "Duste"
+  }
+}
